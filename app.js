@@ -1,4 +1,14 @@
 // const fs = require('fs')
+
+
+
+
+
+
+
+
+
+
 // fs.writeFileSync('hello.txt', 'Hello from Node.js!');
 
 // const app = require('./data.js');
@@ -29,8 +39,21 @@
 const http = require("http");
 http.createServer((req, res) => {
     res.write('hello this is naveen ')
-    // res.end() work reponse is complete 
+    // res.end() work reponse is complete
     res.end()
-}).listen(4500, () => {
+}).listen(4300, () => {
     console.log(' your server is running on port 8080');
 });
+// we use run and create  multiple server in node js  
+http.createServer((req, res) => {
+    res.write('hello this is second server ')
+    // res.end() work reponse is complete
+    res.end()
+}).listen(8800, () => {
+    console.log(' your server is running on port 8080');
+});
+
+
+// use third party packages / external Packages 
+// var colors = require('colors');
+// console.log('hello'.bgBrightRed);
