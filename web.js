@@ -12,5 +12,5 @@ http.createServer((req, resp) => {
         resp.end();
     })  
 }).listen(5100, () => {
-    console.log('runing 5100 port ')
+    console.log('runing 5100 port')
 })
